@@ -8,3 +8,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+nav:
+  - 首页: index.md
+  - 数学: math.md
+  - 计算机系统: computer.md
+  - 机器学习/人工智能: ml.md
+  - 项目: project.md
