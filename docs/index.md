@@ -1,4 +1,3 @@
-# Welcome to MkDocs
+# 欢迎来到linko的小站
 
-!!!tip
-    我讨厌你
+你竟然点到了这个网站，真是巧呢（
