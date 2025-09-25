@@ -3,3 +3,8 @@ site_url: https://rinko224.github.io/
 site_author: linko
 theme:
   name: material
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
