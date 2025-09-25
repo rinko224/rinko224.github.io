@@ -11,7 +11,9 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 数学: 数学/math.md
+  - 数学: 
+    - 解题笔记/questions.md
   - 计算机系统: 计算机系统/computer.md
   - 机器学习/人工智能: 机器学习、人工智能/ml.md
-  - 项目: 项目/project.md
+  - 项目: 
+    - 项目/pokemonvs.md
