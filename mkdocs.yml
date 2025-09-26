@@ -3,7 +3,14 @@ site_url: https://rinko224.github.io/
 site_author: linko
 theme:
   name: material
-
+  favicon: image/R.jpg
+  logo: image/R.jpg
+  features:
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -25,6 +32,3 @@ nav:
 
 repo_url: https://github.com/rinko224/rinko224.github.io
 repo_name: rinko224
-
-extra:
-  favicon: image/R.jpg
