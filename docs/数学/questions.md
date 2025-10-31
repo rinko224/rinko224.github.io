@@ -109,10 +109,12 @@
     f(t)\ge \frac{tf(x)+(x-t)f(0)}{x}.\forall t \in [0,x]
     $$
     故
+    $$
     \begin{align*}
         \int_{0}^{x}f(t)dt &\ge \int_{0}^{x} \frac{tf(x)+(x-t)f(0)}{x}dt\\
         &= \frac{x}{2}(f(x)+1)\\
     \end{align*}
+    $$
     (2)记\(g(x)=\int_{0}^{x}f(t)dt\),故有\(g^{'}(x)=f(x)\)
     此时
     $$
