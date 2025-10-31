@@ -85,7 +85,7 @@
 !!!tip 题目
     设非负函数\(f(x)\)在区间[0,1]上有连续的二阶导数，且满足:
     $$
-     f(0)=1,f^{''}(x)<0
+    f(0)=1,f^{''}(x)<0
     $$
     证明：
     (1)当\(x\in[0,1]\)时，有
@@ -94,7 +94,7 @@
     $$
     (2)
     $$
-     \int_{0}^{1}(\frac{2}{3}-x)f(x)dx \ge \frac{1}{6}
+    \int_{0}^{1}(\frac{2}{3}-x)f(x)dx \ge \frac{1}{6}
     $$
 !!!Note 分析
     这道题是很经典的凹凸函数相关的积分不等式问题。第(1)题比较简单，结论要求我们估计一段区间上积分值和端点的关系，自然想到利用凹凸性将区间上的函数值用端点的值表示出来。
@@ -102,11 +102,11 @@
 ???success "Check your answer"
     (1)由于\(f^{''}(x)<0\)恒成立，所以有
     $$
-        \frac{f(t)-f(0)}{t} \ge \frac{f(x)-f(t)}{x-t},\forall t\in (0,x)
+    \frac{f(t)-f(0)}{t} \ge \frac{f(x)-f(t)}{x-t},\forall t\in (0,x)
     $$
     即
     $$
-        f(t)\ge \frac{tf(x)+(x-t)f(0)}{x}.\forall t \in [0,x]
+    f(t)\ge \frac{tf(x)+(x-t)f(0)}{x}.\forall t \in [0,x]
     $$
     故
     $$
@@ -133,7 +133,7 @@
     $$
     对等式两边从0到1积分，得
     $$
-       \int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx\\
+    \int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx\\
     $$
     而
     $$
@@ -145,15 +145,15 @@
     $$
     所以代回
     $$
-       \int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx\\
+    \int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx\\
     $$
     得到
     $$
-       \frac{3}{2}\int_{0}^{1}g(x)dx \ge \frac{1}{2}g(1)+\frac{1}{4}
+    \frac{3}{2}\int_{0}^{1}g(x)dx \ge \frac{1}{2}g(1)+\frac{1}{4}
     $$
     这也就是我们要的
     $$
-        \int_{0}^{1}(\frac{2}{3}-x)f(x)dx \ge \frac{1}{6}
+    \int_{0}^{1}(\frac{2}{3}-x)f(x)dx \ge \frac{1}{6}
     $$
 
 
