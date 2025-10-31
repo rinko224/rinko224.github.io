@@ -111,7 +111,7 @@
     故
     $$
     \begin{aligned}
-        \int_{0}^{x}f(t)dt &\ge \int_{0}^{x} \frac{tf(x)+(x-t)f(0)}{x}dt\\
+        \int_{0}^{x}f(t)dt &\ge \int_{0}^{x} \frac{tf(x)+(x-t)f(0)}{x}dt\\\\
         &= \frac{x}{2}(f(x)+1)
     \end{aligned}
     $$
@@ -119,8 +119,8 @@
     此时
     $$
     \begin{align}
-        \int_{0}^{1}(\frac{2}{3}-x)f(x)dx &=\int_{0}^{1}(\frac{2}{3}-x)dg(x)\\
-        & = -\frac{1}{3}g(1)+\int_0^1g(x)dx\\
+        \int_{0}^{1}(\frac{2}{3}-x)f(x)dx &=\int_{0}^{1}(\frac{2}{3}-x)dg(x)\\\\
+        & = -\frac{1}{3}g(1)+\int_0^1g(x)dx\\\\
     \end{align}
     $$
     而由(1),有
@@ -138,14 +138,14 @@
     而
     $$
     \begin{align}
-       \int_{0}^{1}\frac{x}{2}(f(x)+1)dx &=\frac{1}{2}\int_{0}^{1}xf(x)dx+\frac{1}{4}\\
-       & = \frac{1}{2}\int_0^1xdg(x)+\frac{1}{4}\\
-       & = \frac{1}{2}g(1)-\frac{1}{2}\int_0^1g(x)dx+\frac{1}{4} \\
+       \int_{0}^{1}\frac{x}{2}(f(x)+1)dx &=\frac{1}{2}\int_{0}^{1}xf(x)dx+\frac{1}{4}\\\\
+       & = \frac{1}{2}\int_0^1xdg(x)+\frac{1}{4}\\\\
+       & = \frac{1}{2}g(1)-\frac{1}{2}\int_0^1g(x)dx+\frac{1}{4} 
     \end{align}
     $$
     所以代回
     $$
-    \int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx\\
+    \int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx
     $$
     得到
     $$
