@@ -118,10 +118,10 @@
     (2)记\(g(x)=\int_{0}^{x}f(t)dt\),故有\(g^{'}(x)=f(x)\)
     此时
     $$
-    \begin{align}
+    \begin{align*}
         \int_{0}^{1}(\frac{2}{3}-x)f(x)dx &=\int_{0}^{1}(\frac{2}{3}-x)dg(x)\\\\
         & = -\frac{1}{3}g(1)+\int_0^1g(x)dx\\\\
-    \end{align}
+    \end{align*}
     $$
     而由(1),有
     $$
