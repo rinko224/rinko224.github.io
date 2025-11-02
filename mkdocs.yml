@@ -28,6 +28,9 @@ nav:
   - 首页: index.md
   - 数学: 
     - 解题笔记: 数学/questions.md
+    - 随笔: 
+       - quine.md
+       - a function equation.md
   - 计算机系统: 
     - 说明: 计算机系统/index.md
     - 对象存储控制器关键技术研究: 计算机系统/对象存储控制器关键技术研究.md
