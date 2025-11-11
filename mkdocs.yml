@@ -30,11 +30,13 @@ nav:
   - 数学: 
     - 解题笔记: 数学/questions.md
     - 随笔: 
-       - 集异壁: quine.md
-       - 一个函数方程: a function equation.md
+       - 集异壁: 数学/quine.md
+       - 一个函数方程: 数学/a function equation.md
   - 计算机系统: 
-    - 说明: 计算机系统/index.md
-    - 对象存储控制器关键技术研究: 计算机系统/对象存储控制器关键技术研究.md
+    - 笔记:
+      - 计算机组成: 计算机系统/计算机组成/index.md
+      - Chapter3: 计算机系统/计算机组成/Chapter3.md
+    - 论文阅读: 计算机系统/对象存储控制器关键技术研究.md
   - 机器学习/人工智能: 机器学习、人工智能/ml.md
   - 项目: 
     - PokemonVs: 项目/pokemonvs.md
