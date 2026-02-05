@@ -270,7 +270,7 @@
 !!!tip "题目"
     设\(A=(a_{ij})\)为\(n\)阶实矩阵,\(\alpha_1,\alpha_2,\cdots,\alpha_n\)为\(A\)的\(n\)个列向量,且均不为0,证明:矩阵\(A\)的秩满足
     $$
-    r(A)\ge \sum_{i=1}^{n}\frac{a_{ii}^2}{\alpha_i^{T}\alpha_i}    
+    r(A)\ge \sum_{i=1}^{n}\frac{a_{ii}^2}{\alpha_i^{T}\alpha_i}
     $$
 !!!Note "分析"
     看上去挺优雅的一道线性代数题,用矩阵\(A\)的一些数量特征刻画了矩阵的秩。但思路还是比较自然的,将\(\alpha_i\)用这组向量的单位正交基表示即可。
@@ -278,24 +278,24 @@
 ???success "Check your answer"
     由于对矩阵\(A\)进行伸缩行列等初等变换不影响举证的秩序,所以可以不妨假设
     $$
-    \alpha_{i}^{T}\alpha_{i}=1,i=1,2,\cdots,n    
+    \alpha_{i}^{T}\alpha_{i}=1,i=1,2,\cdots,n
     $$
     即证:
     $$
-    r(A)\ge \sum_{i=1}^{n} a_{ii}^2    
+    r(A)\ge \sum_{i=1}^{n} a_{ii}^2
     $$
     设\(r(A)=m\),取\(A\)的列向量的一组单位正交基\((\beta_{i})\),记自然基为\((e_i)\)
     故
     $$
-    a_{ii}^2=(e_{i}^{T}\alpha_{i})^2    
+    a_{ii}^2=(e_{i}^{T}\alpha_{i})^2
     $$
     而\(\alpha_{i}\)可以表示为\(\beta_{i}\)的线性组合，即
     $$
-    \alpha_{i}=\sum_{t=1}^{m}x_{t}\beta_{t}    
+    \alpha_{i}=\sum_{t=1}^{m}x_{t}\beta_{t}
     $$
     故根据柯西不等式
     $$
-    a_{ii}^2=(\sum_{t=1}^{m}x_te_{i}^{T}\beta_{t})\le (\sum_{t=1}^{m}x_{t}^2)(\sum_{t=1}^{m}(e_{i}^{T}\beta_{t})^{2})    
+    a_{ii}^2=(\sum_{t=1}^{m}x_te_{i}^{T}\beta_{t})\le (\sum_{t=1}^{m}x_{t}^2)(\sum_{t=1}^{m}(e_{i}^{T}\beta_{t})^{2})
     $$
     \(\sum_{t=1}^{m}x_{t}^2\)即为模长1，故
     得到
