@@ -1,0 +1,1643 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="linko">
+      
+      
+        <link rel="canonical" href="https://rinko224.github.io/%E6%95%B0%E5%AD%A6/questions/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../quine/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../image/R.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>解题笔记 - linko的小站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="linko的小站" class="md-header__button md-logo" aria-label="linko的小站" data-md-component="logo">
+      
+  <img src="../../image/R.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            linko的小站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              解题笔记
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rinko224/rinko224.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rinko224
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  数学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/" class="md-tabs__link">
+          
+  
+  
+  计算机系统
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/ml/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  机器学习/人工智能
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E9%A1%B9%E7%9B%AE/pokemonvs/" class="md-tabs__link">
+          
+  
+  
+  项目
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="linko的小站" class="md-nav__button md-logo" aria-label="linko的小站" data-md-component="logo">
+      
+  <img src="../../image/R.jpg" alt="logo">
+
+    </a>
+    linko的小站
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rinko224/rinko224.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rinko224
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    解题笔记
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    解题笔记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2025913" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025926" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.26
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025927" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025929" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20251031" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.10.31
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.11.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#202625" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026.2.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    随笔
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    随笔
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    集异壁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a%20function%20equation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一个函数方程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机组成
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机组成
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程信息
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/Chapter0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/Chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%8E%A7%E5%88%B6%E5%99%A8%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    论文阅读
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/ml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机器学习/人工智能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    项目
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    项目
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%A1%B9%E7%9B%AE/pokemonvs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PokemonVs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2025913" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025926" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.26
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025927" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025929" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.9.29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20251031" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.10.31
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2025.11.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#202625" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026.2.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/rinko224/rinko224.github.io/edit/master/docs/数学/questions.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="_1">解题笔记</h1>
+<p>这里主要是分享一些遇到的比较有趣的数学问题和解题思考。</p>
+<h2 id="2025913">2025.9.13</h2>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>设<span class="arithmatex">\(m,n,k\)</span>都是正整数，<span class="arithmatex">\(m\ge 2\)</span>，且<span class="arithmatex">\(n\ge k \ge 2\)</span>，实数<span class="arithmatex">\(x_1\ge x_2 \ge \cdots \ge x_n\ge0\)</span>，满足以下两个条件：
+(1) <span class="arithmatex">\(x_1^m+x_2^m+\cdots+x_n^m\ge 1\)</span>
+(2) <span class="arithmatex">\(x_1+x_2+\cdots+x_n\le k\)</span>
+求证： <span class="arithmatex">\(x_1+x_2+\cdots+x_k\ge 1\)</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分析</p>
+<p>这道题目的关键入手点我觉得是反证法。这里是两个条件推出一个结论，所以如果使用反证法，我们就应该假设结论不成立，去证明其中一个条件不成立。观察（1）和（2）两个条件，我们选择保留（2）这个看上去比较简单的条件，而去证明条件（1）不正确。
+这时，很容易可以注意到，此时要证结论：
+$$ x_1^m+x_2^m+\cdots+x_n^m&lt;1 $$
+只需要证明更强的结论：
+$$ x_1^2+x_2^2+\cdots+x_n^2&lt;1 $$
+即可。这时再观察题目，会发现问题其实就变成了一个有关二次函数凹凸性的调整问题，感觉已经是老调常谈了。明显可以看到<span class="arithmatex">\(x_k\)</span>的取值比较关键，所以放缩要围绕着<span class="arithmatex">\(x_k\)</span>展开。</p>
+</div>
+<details class="success">
+<summary>Check your answer</summary>
+<p>原问题已经被转化为了下面这个经典问题：
+$$ (1) x_1+x_2+\cdots+x_n \le k$$
+$$ (2) x_1+x_2+\cdots+x_k &lt; 1 $$
+证明:
+$$ x_1^2+x_2^2+\cdots+x_n^2&lt;1 $$
+根据二次函数的凹凸性，我们知道几个数在和一定的情况下，这几个数的值的分布越分散，二次和越大。
+两个条件很显然提示我们将<span class="arithmatex">\(x_1,x_2,\cdots,x_n\)</span>这<span class="arithmatex">\(n\)</span>个数分成两组，即<span class="arithmatex">\(x_1,x_2,\cdots,x_k\)</span>和<span class="arithmatex">\(x_{k+1},x_{k+2},\cdots,x_n\)</span>。
+不妨设<span class="arithmatex">\(x_1+x_2+\cdots+x_k=a\)</span>，从而<span class="arithmatex">\(a&lt;1\)</span>且<span class="arithmatex">\(x_{k+1}+\cdots+x_n\le k-a\)</span>。
+现在就可以分开来讨论了，首先考虑前面<span class="arithmatex">\(k\)</span>项，由于<span class="arithmatex">\(x_i\ge x_k,i=1,2\cdots,k\)</span>
+所以前面<span class="arithmatex">\(k\)</span>项最分散的情况就是
+$$ 
+(x_1,x_2,\cdots,x_k)=(a-(k-1)x_k,x_k,\cdots,x_k)
+$$
+注意这样的分散状态是一定可以达成的（既满足所有前<span class="arithmatex">\(k\)</span>项应该满足的条件，对剩下的其余几项也完全不会干扰），也就是说我们可以大胆地放缩：
+$$ x_1^2+x_2^2+\cdots+x_k^2\le (a-(k-1)x_k)^2+(k-1)x_k^2 $$
+而对于后面剩下的几项，这里的分析就比较有意思了。
+如果<span class="arithmatex">\(x_{k+1}+x_{k+2}+\cdots+x_n\)</span>是一个定值，那么二次和最大的时候当然是只有<span class="arithmatex">\(x_{k+1}\)</span>非零，其它全0的情况，但是这里<span class="arithmatex">\(x_{k+1}+x_{k+2}+\cdots+x_n\)</span>不是定值，而是有上界。如果我们让<span class="arithmatex">\(x_{k+1}\)</span>非零，其它全0的话，会由于
+$$ x_{k+1} \le x_k$$
+的限制，“浪费”掉<span class="arithmatex">\(x_{k+1}+\cdots+x_n\)</span>这部分的取值，从而导致结果并不是最优的。
+所以我们要采取“折衷”的放缩策略，在放缩的同时，兼顾<span class="arithmatex">\(x_{k+1}+\cdots+x_n\)</span>的上界。这里就要用到下面这个经典又巧妙的放缩技巧：
+$$ x_i^2\le x_i x_{k}$$
+这个的正确性不言而喻，这样就有
+$$ x_{k+1}^2+\cdots+x_n^2\le (x_{k+1}+\cdots+x_n)x_k $$
+这样就综合考虑了两个条件，不造成“浪费”。（貌似有点引入罚函数的意味？）
+所以
+$$ x_1^2+x_2^2+\cdots+x_n^2\le (a-(k-1)x_k)^2+(k-1)x_k^2+(x_{k+1}+\cdots+x_n)x_k $$
+即
+$$ x_1^2+x_2^2+\cdots+x_n^2\le (a-(k-1)x_k)^2+(k-1)x_k^2+(k-a)x_k $$
+可以把右边看作是一个关于<span class="arithmatex">\(x_k\)</span>的开口向上的二次函数<span class="arithmatex">\(f(x_k)\)</span>，其中<span class="arithmatex">\(x_k\)</span>的取值范围是<span class="arithmatex">\([0,\frac{a}{k}]\)</span>。
+由于二次函数开口向上，所以最大值只能在端点取到，而
+$$ f(0)=a^2&lt;1,f(\frac{a}{k})=a&lt;1 $$
+这也就证明了原题。</p>
+</details>
+<h2 id="2025926">2025.9.26</h2>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>设矩阵<span class="arithmatex">\(A\)</span>是<span class="arithmatex">\(n\)</span>阶对称矩阵，<span class="arithmatex">\(d_k\)</span>为给定的非零向量，若对任意满足<span class="arithmatex">\(||d||=||d_k||\)</span>，<span class="arithmatex">\(d\in R^n\)</span>，均有
+ $$ (d-d_k)^T A (d-d_k)\ge 0$$
+ 证明：<span class="arithmatex">\(A\)</span>是半正定矩阵</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分析</p>
+<p>这题的结论看上去挺优雅的。记<span class="arithmatex">\(x=d-d_k\)</span>，则题目大概描述了这么一件事：
+只要对所有满足
+$$ ||x+d_k||=||d_k|| （1）$$
+的向量<span class="arithmatex">\(x\)</span>成立有
+$$ x^T A x \ge 0 $$
+就能说明对所有的向量<span class="arithmatex">\(x\)</span>成立有
+$$ x^T A x \ge 0 （2）$$
+首先，我们知道，要想（2）式成立，我们并不关心向量<span class="arithmatex">\(x\)</span>的具体长度，而只关心它的方向（因为<span class="arithmatex">\((\lambda x)^T A (\lambda x)=\lambda^2 (x^T A x)\)</span>）<br />
+所以我们实际上只需要考虑满足（1）式的向量<span class="arithmatex">\(x\)</span>是否能遍历平面上所有的方向。<br />
+从几何直观上，这是显然的，因为可以将<span class="arithmatex">\(x\)</span>理解为一个圆上固定一点与另一动点的连线，这显然是几乎可以遍历平面上所有方向的。<br />
+之所以说是“几乎”，是因为如果这个方向与<span class="arithmatex">\(d_k\)</span>是垂直的，那么就不能表示出来了（变成这一点的切线方向了），这时就要单独拿出来考虑。</p>
+</div>
+<details class="success">
+<summary>Check your answer</summary>
+<p>不妨假设<span class="arithmatex">\(||d_k||=1\)</span>，我们证明<span class="arithmatex">\(\forall x \in R^n\)</span></p>
+</details>
+<h2 id="2025927">2025.9.27</h2>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>设</p>
+</div>
+<h2 id="2025929">2025.9.29</h2>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>求<span class="arithmatex">\(f(x)\)</span>使得
+$$ f(f(x))=\frac{x+1}{x+2} $$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分析</p>
+<p>这个问题出现在了很多高数课本的课后习题中，网上的做法</p>
+</div>
+<h2 id="20251031">2025.10.31</h2>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>设非负函数<span class="arithmatex">\(f(x)\)</span>在区间[0,1]上有连续的二阶导数，且满足:
+$$
+f(0)=1,f^{''}(x)&lt;0
+$$
+证明：
+(1)当<span class="arithmatex">\(x\in[0,1]\)</span>时，有
+$$
+\int_{0}^{x}f(t)dt - \frac{x}{2}(f(x)+1)\ge 0
+$$
+(2)
+$$
+\int_{0}^{1}(\frac{2}{3}-x)f(x)dx \ge \frac{1}{6}
+$$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分析</p>
+<p>这道题是很经典的凹凸函数相关的积分不等式问题。第(1)题比较简单，结论要求我们估计一段区间上积分值和端点的关系，自然想到利用凹凸性将区间上的函数值用端点的值表示出来。
+而第(2)题就比较有难度，这里的做法是对积分进行分段分部积分，暂时还没想出其背景解释。</p>
+</div>
+<details class="success">
+<summary>Check your answer</summary>
+<p>(1)由于<span class="arithmatex">\(f^{''}(x)&lt;0\)</span>恒成立，所以有
+$$
+\frac{f(t)-f(0)}{t} \ge \frac{f(x)-f(t)}{x-t},\forall t\in (0,x)
+$$
+即
+$$
+f(t)\ge \frac{tf(x)+(x-t)f(0)}{x}.\forall t \in [0,x]
+$$
+故
+$$
+\begin{align*}
+    \int_{0}^{x}f(t)dt &amp;\ge \int_{0}^{x} \frac{tf(x)+(x-t)f(0)}{x}dt\\
+    &amp;= \frac{x}{2}(f(x)+1)
+\end{align*}
+$$
+(2)记<span class="arithmatex">\(g(x)=\int_{0}^{x}f(t)dt\)</span>,故有<span class="arithmatex">\(g^{'}(x)=f(x)\)</span>
+此时
+$$
+\begin{align*}
+    \int_{0}^{1}(\frac{2}{3}-x)f(x)dx &amp;=\int_{0}^{1}(\frac{2}{3}-x)dg(x)\\
+    &amp; = -\frac{1}{3}g(1)+\int_0^1g(x)dx\\
+\end{align*}
+$$
+而由(1),有
+$$
+\int_{0}^{x}f(t)dt \ge \frac{x}{2}(f(x)+1)
+$$
+即
+$$
+g(x) \ge \frac{x}{2}(f(x)+1)
+$$
+对等式两边从0到1积分，得
+$$
+\int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx\
+$$
+而
+$$
+\begin{align*}
+   \int_{0}^{1}\frac{x}{2}(f(x)+1)dx &amp;=\frac{1}{2}\int_{0}^{1}xf(x)dx+\frac{1}{4}\\
+   &amp; = \frac{1}{2}\int_0^1xdg(x)+\frac{1}{4}\\
+   &amp; = \frac{1}{2}g(1)-\frac{1}{2}\int_0^1g(x)dx+\frac{1}{4} 
+\end{align*}
+$$
+所以代回
+$$
+\int_{0}^{1}g(x)dx \ge \int_{0}^{1}\frac{x}{2}(f(x)+1)dx
+$$
+得到
+$$
+\frac{3}{2}\int_{0}^{1}g(x)dx \ge \frac{1}{2}g(1)+\frac{1}{4}
+$$
+这也就是我们要的
+$$
+\int_{0}^{1}(\frac{2}{3}-x)f(x)dx \ge \frac{1}{6}
+$$</p>
+</details>
+<h2 id="2025112">2025.11.2</h2>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>设<span class="arithmatex">\(f(x)\)</span>是一多项式，若
+$$
+\forall x \in R, f^{'''}(x)-f^{''}(x)-f^{'}(x)+f(x)\ge 0
+$$
+证明:
+$$
+f(x)\ge 0, x \in R
+$$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分析</p>
+<p>这种涉及多阶导数的题本质上应该都是解微分方程。
+题目条件中的：
+$$
+f^{'''}(x)-f^{''}(x)-f^{'}(x)+f(x) \ge 0
+$$
+通过凑微分，很容易发现其实就是
+$$
+(e^{x}(f^{''}(x)+f(x)-2f^{'}(x)))^{'} \ge 0
+$$
+这题比较新颖的地方也就是对“多项式”性质的刻画。这里实际上并没有用到多项式的形式，而只是用到了多项式量级比指数函数小很多的数量性质。</p>
+</div>
+<details class="success">
+<summary>Check your answer</summary>
+<p>根据条件，
+$$
+(e^{x}(f^{''}(x)+f(x)-2f^{'}(x)))^{'} \ge 0
+$$
+恒成立，故函数<span class="arithmatex">\(e^{x}(f^{''}(x)+f(x)-2f^{'}(x))\)</span>在<span class="arithmatex">\(R\)</span>上单调不减。
+而我们知道
+$$
+\lim_{x\to -\infty}e^{x}(f^{''}(x)+f(x)-2f^{'}(x)) = 0
+$$
+所以结合单调性可以得到:
+$$
+e^{x}(f^{''}(x)+f(x)-2f^{'}(x)) \ge 0, \forall x \in R
+$$
+即
+$$
+f^{''}(x)+f(x)-2f^{'}(x) \ge 0, \forall x \in R
+$$
+即
+$$
+(\frac{f(x)-f^{'}(x)}{e^x})^{'}\le 0,\forall x \in R
+$$
+类似的，
+$$
+\lim_{x\to \infty} \frac{f(x)-f^{'}(x)}{e^x} = 0
+$$
+所以结合单调性
+$$
+f(x)-f^{'}(x)\ge 0, \forall x \in R
+$$
+即<span class="arithmatex">\(e^{x}f(x)\)</span>递减，此时再利用
+$$
+\lim_{x\to \infty} e^{x}f(x) = 0
+$$
+即可得到
+$$
+f(x)\ge 0, \forall x \in R
+$$</p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>设<span class="arithmatex">\(f(x)\)</span>在[0,1]上二阶可导,满足<span class="arithmatex">\(f(0)f(1)&gt;0\)</span>,且存在常数<span class="arithmatex">\(\lambda &gt; 0\)</span>，使得
+$$
+\lambda f(0)+\int_{0}^{1}f(x)dx = 0
+$$
+证明:
+$$
+\exists \xi \in (0,1), st f(\xi) = (\xi^2 - 2 \xi)f^{'}(\xi)+(\xi^2-2\xi+1)f^{''}(\xi)
+$$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分析</p>
+<p>首先这题目给的条件
+$$
+\lambda f(0)+\int_{0}^{1}f(x)dx = 0
+$$
+就有点迷惑性了，实际上他想表达的意思就是
+$$
+f(0)\int_{0}^{1}f(x)dx &lt; 0 （1）
+$$
+再结合<span class="arithmatex">\(f(0)f(1)&gt;0\)</span>这个条件，我们可以很自信地将（1）这个条件转化成
+$$
+\exists \epsilon \in (0,1),st f(0)f(\epsilon)&lt;0 （2）
+$$
+这里利用了积分中值定理。
+所以再利用介值定理，很容易察觉题目其实就是想告诉我们，在[0,1]这个区间上，存在两个零点(分别在<span class="arithmatex">\((0,\epsilon)\)</span>和<span class="arithmatex">\((\epsilon,1)\)</span>上)。
+再回到要找的方程 <br />
+$$
+f(\xi) = (\xi^2 - 2 \xi)f^{'}(\xi)+(\xi^2-2\xi+1)f^{''}(\xi)
+$$
+解这个微分方程，也就是要找到一点<span class="arithmatex">\(\xi\)</span>，使得
+$$
+(f(\xi)+f^{'}(\xi))e^{-\frac{1}{x-1}}
+$$
+的导数为0。
+注意到<span class="arithmatex">\(e^{-\frac{1}{x-1}}\)</span>是一个很复杂的函数，我们大胆猜想，可以找到(0,1)上两点<span class="arithmatex">\(\xi_1\)</span>和<span class="arithmatex">\(\xi_2\)</span>，使得
+$$
+f(\xi_1)+f^{'}(\xi_1)=f(\xi_2)+f^{'}(\xi_2)=0
+$$
+这样就可以不考虑<span class="arithmatex">\(e^{-\frac{1}{x-1}}\)</span>这个函数了。</p>
+</div>
+<details class="success">
+<summary>Check your answer</summary>
+<p>记<span class="arithmatex">\(h(x)=e^{x}f(x)\)</span>。
+从分析中可见，
+$$
+\exists x_1,x_2 \in (0,1), f(x_1)=f(x_2)=0
+$$
+即
+$$
+h(x_1)=h(x_2)=0
+$$
+所以</p>
+</details>
+<h2 id="202625">2026.2.5</h2>
+<div class="admonition tip">
+<p class="admonition-title">题目</p>
+<p>设<span class="arithmatex">\(A=(a_{ij})\)</span>为<span class="arithmatex">\(n\)</span>阶实矩阵,<span class="arithmatex">\(\alpha_1,\alpha_2,\cdots,\alpha_n\)</span>为<span class="arithmatex">\(A\)</span>的<span class="arithmatex">\(n\)</span>个列向量,且均不为0,证明:矩阵<span class="arithmatex">\(A\)</span>的秩满足
+$$
+r(A)\ge \sum_{i=1}^{n}\frac{a_{ii}^2}{\alpha_i^{T}\alpha_i}
+$$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分析</p>
+<p>看上去挺优雅的一道线性代数题,用矩阵<span class="arithmatex">\(A\)</span>的一些数量特征刻画了矩阵的秩。但思路还是比较自然的,将<span class="arithmatex">\(\alpha_i\)</span>用这组向量的单位正交基表示即可。</p>
+</div>
+<details class="success">
+<summary>Check your answer</summary>
+<p>由于对矩阵<span class="arithmatex">\(A\)</span>进行伸缩行列等初等变换不影响举证的秩序,所以可以不妨假设
+$$
+\alpha_{i}^{T}\alpha_{i}=1,i=1,2,\cdots,n
+$$
+即证:
+$$
+r(A)\ge \sum_{i=1}^{n} a_{ii}^2
+$$
+设<span class="arithmatex">\(r(A)=m\)</span>,取<span class="arithmatex">\(A\)</span>的列向量的一组单位正交基<span class="arithmatex">\((\beta_{i})\)</span>,记自然基为<span class="arithmatex">\((e_i)\)</span>
+故
+$$
+a_{ii}^2=(e_{i}^{T}\alpha_{i})^2
+$$
+而<span class="arithmatex">\(\alpha_{i}\)</span>可以表示为<span class="arithmatex">\(\beta_{i}\)</span>的线性组合，即
+$$
+\alpha_{i}=\sum_{t=1}^{m}x_{t}\beta_{t}
+$$
+故根据柯西不等式
+$$
+a_{ii}^2=(\sum_{t=1}^{m}x_te_{i}^{T}\beta_{t})\le (\sum_{t=1}^{m}x_{t}^2)(\sum_{t=1}^{m}(e_{i}^{T}\beta_{t})^{2})
+$$
+<span class="arithmatex">\(\sum_{t=1}^{m}x_{t}^2\)</span>即为模长1，故
+得到
+$$
+a_{ii}^2\le \sum_{t=1}^{m}(e_{i}^{T}\beta_{t})^{2},i=1,2,\cdots,n
+$$
+求和得到
+$$
+\sum_{i=1}^{n}a_{ii}^2\le \sum_{i=1}^{n}\sum_{t=1}^{m}(e_{i}^T\beta_t)^2
+$$
+即
+$$
+\sum_{i=1}^{n}a_{ii}^2\le\sum_{t=1}^{m}\sum_{i=1}^{n}(e_{i}^T\beta_t)^2=m
+$$
+(这里注意到<span class="arithmatex">\(\sum_{i=1}^{n}(e_{i}^T\beta_t)^2 = |\beta_t|^2=1,\forall t\)</span>)
+即得证</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "search.share", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
