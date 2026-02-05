@@ -277,39 +277,39 @@
 
 ???success "Check your answer"
     由于对矩阵\(A\)进行伸缩行列等初等变换不影响举证的秩序,所以可以不妨假设
-    \[
+    $$
     \alpha_{i}^{T}\alpha_{i}=1,i=1,2,\cdots,n    
-    \]
+    $$
     即证:
-    \[
+    $$
     r(A)\ge \sum_{i=1}^{n} a_{ii}^2    
-    \]
+    $$
     设\(r(A)=m\),取\(A\)的列向量的一组单位正交基\((\beta_{i})\),记自然基为\((e_i)\)
     故
-    \[
+    $$
     a_{ii}^2=(e_{i}^{T}\alpha_{i})^2    
-    \]
+    $$
     而\(\alpha_{i}\)可以表示为\(\beta_{i}\)的线性组合，即
-    \[
+    $$
     \alpha_{i}=\sum_{t=1}^{m}x_{t}\beta_{t}    
-    \]
+    $$
     故根据柯西不等式
-    \[
+    $$
     a_{ii}^2=(\sum_{t=1}^{m}x_te_{i}^{T}\beta_{t})\le (\sum_{t=1}^{m}x_{t}^2)(\sum_{t=1}^{m}(e_{i}^{T}\beta_{t})^{2})    
-    \]
+    $$
     \(\sum_{t=1}^{m}x_{t}^2\)即为模长1，故
     得到
-    \[
+    $$
     a_{ii}^2\le \sum_{t=1}^{m}(e_{i}^{T}\beta_{t})^{2},i=1,2,\cdots,n
-    \]
+    $$
     求和得到
-    \[
+    $$
     \sum_{i=1}^{n}a_{ii}^2\le \sum_{i=1}^{n}\sum_{t=1}^{m}(e_{i}^T\beta_t)^2
-    \]
+    $$
     即
-    \[
+    $$
     \sum_{i=1}^{n}a_{ii}^2\le\sum_{t=1}^{m}\sum_{i=1}^{n}(e_{i}^T\beta_t)^2=m
-    \]
+    $$
     (这里注意到\(\sum_{i=1}^{n}(e_{i}^T\beta_t)^2 = |\beta_t|^2=1,\forall t\))
     即得证
 
